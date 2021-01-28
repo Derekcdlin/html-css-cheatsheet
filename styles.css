@@ -1,6 +1,9 @@
 #wrap{
     background-color: #dedede;
-    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
     padding: 0;
     position: relative;
     text-align: left;
@@ -13,7 +16,7 @@ body {
     background: #444 url("./images/bg_body.png")
 }
 header {
-    background-color: navy;
+    background-color: steelblue;
     color: white;
     margin: 5px;
     padding: 1em;
@@ -58,4 +61,46 @@ ul{
     margin-inline-end: 0px;
     padding-inline-start: 40px;
     list-style-type: disc;
+}
+h1 {
+    font-size: 140%;
+    color: steelblue;
+    text-shadow: 1px 1px #ffffff;
+    font-weight: 700;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    text-align: left;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#main-body {
+    background: #eee;
+    width: 790px;
+    clear: left;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#content {
+    background: #eee;
+    margin: 0;
+    padding: 20px;
+    border-right: 1px solid #aaa;
+    min-height: 560px;
+}
+#sidebar {
+    margin: 0;
+    padding: 20px;
+    width: 140px;
+    float: right;
+    line-height: 1.5em;
+    background: #DEDEDE;
+    font-size: 90%;
+    color:#737173;
+}
+h1 {
+    border-bottom: 1px solid #ddd;
 }
