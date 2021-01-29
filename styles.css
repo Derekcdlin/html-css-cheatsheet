@@ -146,7 +146,6 @@ li {
     text-align: right; 
 }
 p{
-    display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -167,4 +166,63 @@ p{
 .codeText {
     color: #772;
     font-family: monospace;
+}
+.cheatsheet pre.code {
+    background-color: transparent;
+    border: none;
+    padding: 2px 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    text-align: left;
+    padding: 0;
+    line-height: 1.2em;
+    display: block;
+}
+.cheatsheet pre.code, .cheatsheet td {
+    font-size: 90%;
+}
+code {
+    color: #772;
+    text-align: left;
+    font-weight: 400;
+    font-family: monospace;
+}
+div, section{
+    display: block;
+}
+.cheatsheet table {
+    border: none;
+    line-height: 1.1em;
+    margin: 10px 10px 8px 0;
+    padding: 0;
+    width: 100%;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.cheatsheet td.code {
+    color:#772;
+    width: 250px;
+    padding-right: 5px;
+    font-family: monospace;
+    text-align: left;
+    font-size: 90%;
+}
+.cheatsheet td {
+    margin: 0px;
+    padding: 0px;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
 }
