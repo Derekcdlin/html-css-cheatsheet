@@ -64,17 +64,29 @@ ul{
 }
 h1 {
     font-size: 140%;
-    color: steelblue;
-    text-shadow: 1px 1px #ffffff;
     font-weight: 700;
-    padding-top: 0px;
-    padding-bottom: 5px;
-    text-align: left;
     display: block;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+h1, h2, h3 {
+    color: steelblue;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+.maintitle {
+    text-shadow: 1px 1px #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.maintitle, .chapter {
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 10px;
+    text-align: justify;
+    padding-bottom: 5px;
 }
 #main-body {
     background: #eee;
@@ -100,9 +112,6 @@ h1 {
     background: #DEDEDE;
     font-size: 90%;
     color:#737173;
-}
-h1 {
-    border-bottom: 1px solid #ddd;
 }
 #sidebar ul li {
     padding: 0 0 0px 15px;
@@ -154,4 +163,8 @@ p{
 #footer a{
     text-decoration: none;
     color: #bbb;
+}
+.codeText {
+    color: #772;
+    font-family: monospace;
 }
