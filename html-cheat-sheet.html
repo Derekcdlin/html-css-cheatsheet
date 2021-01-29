@@ -21,6 +21,9 @@
                         <a href="css-cheat-sheet.html">CSS Cheat Sheet</a>
                     </li>
                     <li>
+                        <a href="color.html">Color Reference</a>
+                    </li>
+                    <li>
                         <a href="about-me.html">About Me</a>
                     </li>
                 </ul>
@@ -329,7 +332,7 @@
                                             color="#?????? or name"
                                         </td>
                                         <td>
-                                            Line <a href="css-cheat-sheet.html#namedColors">Color</a>
+                                            Line <a href="color.html">Color</a> <a href="#note">(*)</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -337,7 +340,7 @@
                                             align="?"
                                         </td>
                                         <td>
-                                            Horizontal alignment: <code>left, center, right</code>
+                                            Horizontal alignment: <code>left, center, right</code> <a href="#note">(*)</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -408,18 +411,441 @@
                                             Basic image
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td>
+                                            &lt;img&gt; Tag Attributes:
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            src="url"
+                                        </td>
+                                        <td>
+                                            URL or filename of image (required)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            alt="text"
+                                        </td>
+                                        <td>
+                                            Alternate text (required)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            align="?"
+                                        </td>
+                                        <td>
+                                            Image alignment within surrounding text <a href="#note">(*)</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            width="??"
+                                        </td>
+                                        <td>
+                                            Image width (in pixels(px) or %)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            height="??"
+                                        </td>
+                                        <td>
+                                            Image height (in pixels(px) or %)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            border="??"
+                                        </td>
+                                        <td>
+                                            Border thickness (in pixels(px)) <a href="#note">(*)</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            vspace="??"
+                                        </td>
+                                        <td>
+                                            Space above or below the image (in pixels(px)) <a href="#note">(*)</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            hspace="??"
+                                        </td>
+                                        <td>
+                                            Space on left or right of image (in pixels(px)) <a href="#note">(*)</a>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </section>
                         <section class="chapter">
                             <h3 id="linkingTags">Linking Tags</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;a href="url"&gt; link text &lt;/a&gt;
+                                        </td>
+                                        <td>
+                                            Basic link
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &lt;a&gt; Tag Attributes:
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            href="url"
+                                        </td>
+                                        <td>
+                                            Location (url) of page to link to.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            name="??"
+                                        </td>
+                                        <td>
+                                            Name of link (name of anchor, or name of bookamrk)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            target="?"
+                                        </td>
+                                        <td>
+                                            Link target location: <code>_self, _blank, _top, _parent</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            href="url#bookmark"
+                                        </td>
+                                        <td>
+                                            Link to a bookamrk (defined with <code>name</code> attribute).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            href="mailto:email"
+                                        </td>
+                                        <td>
+                                            Link which initiates an email (dependant on user's email client).
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </section>
                         <section class="chapter">
                             <h3 id="htmlLists">Lists</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;ol&gt; ... &lt;/ol&gt;
+                                        </td>
+                                        <td>
+                                            Ordered list
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;ul&gt; ... &lt;/ul&gt;
+                                        </td>
+                                        <td>
+                                            Un-ordered list
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;li&gt; ... &lt;/li&gt;
+                                        </td>
+                                        <td>
+                                            List item (within ordered or unordered)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;ol type="?"&gt;
+                                        </td>
+                                        <td>
+                                            Ordered list type: <code>A, a, I, i, 1</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;ol start="??"&gt;
+                                        </td>
+                                        <td>
+                                            Ordered list starting value
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;ul type="?"&gt;
+                                        </td>
+                                        <td>
+                                            Unordered list bullet type: <code>disc, circle, square</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;li value="??"&gt;
+                                        </td>
+                                        <td>
+                                            List item value (changes current and subsequent items)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;li type="??"&gt;
+                                        </td>
+                                        <td>
+                                            List item type (changes only current item)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;dl&gt; ... &lt;/dl&gt;
+                                        </td>
+                                        <td>
+                                            Definition list
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;dt&gt; ... &lt;/dt&gt;
+                                        </td>
+                                        <td>
+                                            Term or phrase being defined
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;dd&gt; ... &lt;/dd&gt;
+                                        </td>
+                                        <td>
+                                            Detailed definition of term
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </section>
                         <section class="chapter">
                             <h3 id="tables">Tables</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;table&gt; ... &lt;/table&gt;
+                                        </td>
+                                        <td>
+                                            Define a table
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &lt;table&gt; Tag Attributes;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            border="?"
+                                        </td>
+                                        <td>
+                                            Thickness of outside border
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            bordercolor="#??????"
+                                        </td>
+                                        <td>
+                                            Border <a href="color.html">Color</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            cellspacing="?"
+                                        </td>
+                                        <td>
+                                            Space between cells (pixels)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            cellpadding="?"
+                                        </td>
+                                        <td>
+                                            Space between cell wall and content
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            align="??"
+                                        </td>
+                                        <td>
+                                            Horizontal alignment: <code>left, center, right</code> <a href="#note">(*)</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            bgcolor="#??????"
+                                        </td>
+                                        <td>
+                                            Background <a href="color.html">Color</a> <a href="#note">(*)</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            width="??"
+                                        </td>
+                                        <td>
+                                            Table width (pixels or %) <a href="#note">(*)</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            height="??"
+                                        </td>
+                                        <td>
+                                            Table height (pixels or %) <a href="#note">(*)</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;tr&gt; ... &lt;/tr&gt;
+                                        </td>
+                                        <td>
+                                            Table row within table
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;th&gt; ... &lt;/th&gt;
+                                        </td>
+                                        <td>
+                                            Header cell within table row
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;td&gt; ... &lt;/td&gt;
+                                        </td>
+                                        <td>
+                                            Table cell within table row
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&lt;td&gt; Tag Attributes</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            colspan="?"
+                                        </td>
+                                        <td>
+                                            Number of columns the cell spans across (cell merge)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            rowspan="?"
+                                        </td>
+                                        <td>
+                                            Number of rows the cell spans across (cell merge)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            width="??"
+                                        </td>
+                                        <td>
+                                            Cell width (pixels or %) <a href="#note">(*)</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            height="??"
+                                        </td>
+                                        <td>
+                                            Cell height (pixels or %) <a href="#note">(*)</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            bgcolor="#??????"
+                                        </td>
+                                        <td>
+                                            Cell background <a href="color.html">color</a> <a href="#note">(*)</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            align="??"
+                                        </td>
+                                        <td>
+                                            Horizontal alignment: <code>left, center, right</code> <a href="#note">(*)</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            valign="??"
+                                        </td>
+                                        <td>
+                                            Vertical alignment: <code>top, middle, bottom</code> <a href="#note">(*)</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            nowrap
+                                        </td>
+                                        <td>
+                                            Force no line breaks in a particular cell
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </section> 
+                        <section class="chapter">
+                            <h3 id="frames">Frames</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;frameset&gt; ... &lt;/frameset&gt;
+                                        </td>
+                                        <td>
+                                            Define the set of frames
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section> 
+                        <section class="chapter">
+                            <h3 id="forms">Forms</h3>
+                        </section> 
+                        <section class="chapter">
+                            <h3 id="specialChars">Special Characters</h3>
+                        </section> 
+                        <section class="chapter">
+                            <h3 id="misc">Miscellaneous Tags></h3>
+                        </section> 
+                        <section class="important">
+                            <h4 id="note">(*) Important Note:</h4>
+                            <p>
+                                Tags marked with (*) should still work, but have been superseded by
+                                <a href="css-cheat-sheet.html">Cascading Style Sheets (CSS)</a>, which is now
+                                the recommended way to change the font, colour, spacing, border, or alignment
+                                of HTML elements
+                            </p>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -447,6 +873,18 @@
                         </li>
                         <li>
                             <a href="#tables">Tables</a>
+                        </li>
+                        <li>
+                            <a href="#frames">Frames</a>
+                        </li>
+                        <li>
+                            <a href="#forms">Forms</a>
+                        </li>
+                        <li>
+                            <a href="#specialChars">Special Characters</a>
+                        </li>
+                        <li>
+                            <a href="#misc">Miscellaneous Tags</a>
                         </li>
                     </ul>
                 </div>

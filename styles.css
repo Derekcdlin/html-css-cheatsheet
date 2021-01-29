@@ -71,7 +71,7 @@ h1 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: steelblue;
     padding: 0;
     margin: 0;
@@ -82,7 +82,7 @@ h1, h2, h3 {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.maintitle, .chapter {
+.maintitle, .chapter, .important {
     border-bottom: 1px solid #ddd;
     margin: 0 0 10px;
     text-align: justify;
@@ -231,4 +231,39 @@ td {
 .cheatsheet td.codeint {
     padding-left: 20px;
     width: 230px;
+}
+.important {
+    text-align: justify;
+    border-top: 1px dashed orangered;
+    border-bottom: 1px dashed orangered;
+    border-left: 0;
+    border-right: 0;
+    margin: 14px 0;
+    padding: 6px 0;
+}
+h4 {
+    color: red;
+}
+#colorCodeTable th{
+    margin: 0px 2px;
+    padding: 2px 8px;
+    background-color: #ccc;
+    font-weight: bold;
+}
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    text-align: -internal-center;
+}
+#colorCodeTable {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 85%;
+    border-spacing: 0px;
+}
+#colorCodeTable td{
+    margin: 0px 2px;
+    padding: 1px 8px;
+    border-bottom: 1px solid #ccc;
 }
