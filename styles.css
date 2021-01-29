@@ -104,3 +104,29 @@ h1 {
 h1 {
     border-bottom: 1px solid #ddd;
 }
+#sidebar ul li {
+    padding: 0 0 0px 15px;
+    line-height: 1.5em;
+    text-align: left;
+    background: url(./images/bullet.gif) no-repeat 0 4px;
+}
+li {
+    display: list-item;
+}
+#sidebar .sidebar-item{
+    margin: 0;
+    padding: 0;
+}
+#sidebar h3{
+    font-size: 105%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    color: steelblue;
+}
+#sidebar ul{
+    padding-left: 2px;
+    margin: 1em 0;
+    list-style: none;
+}
