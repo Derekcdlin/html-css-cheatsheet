@@ -46,7 +46,60 @@
                     </section>
                     <div class="cheatsheet">
                         <section class="chapter">
+                            <h3 id="usingStyles">Using Styles</h3>
+                            <p><b>An external CSS file</b></p>
+                            <pre class="code"><code>&lt;head><br>&nbsp;&nbsp;&nbsp;&lt;link href="style.css" type="text/css" rel="stylesheet"><br>&lt;/head></code></pre>
+                            <p><b>Within the HTML header</b></p>
+                            <pre class="code"><code>&lt;head><br>&nbsp;&nbsp;&nbsp;&lt;style type="text/css"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h1 &#123;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;<br>&nbsp;&nbsp;&nbsp;&lt;/style><br>&lt;/head></code></pre>
+                            <p><b>Inline in the HTML</b></p>
+                            <pre class="code"><code>&lt;p style="color:red;">Some red text&lt;/p></code></pre>
+                        </section>
+                        <section class="chapter">
                             <h3 id="colorsBorders">Colors & Borders</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="code">
+                                            color: red;
+                                        </td>
+                                        <td>
+                                            Element <a href="color.html">Color</a> - eg <code>red | #FF0000</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            background-color: white;
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            background-image: url(image.gif);
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            border-color: yellow;
+                                        </td>
+                                        <td>
+                                            Border <a href="color.html">color</a> of element
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            border: 1px solid blue;
+                                        </td>
+                                        <td>
+                                            Width, style and <a href="color.html">color</a> of border defined together
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </section>
                         <section class="chapter">
                             <h3 id="textStyles">Text Styles</h3>

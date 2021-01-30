@@ -46,15 +46,7 @@
                     <div class="cheatsheet">
                         <section class="chapter">
                             <h3 id="basics">Basic HTML Structure</h3>
-                            <pre class="code">
-<code style="line-height:1.4em;">&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;website title&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        content of website ...
-    &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+                            <pre class="code"><code>&lt;html><br>&nbsp;&nbsp;&nbsp;&lt;head><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title>website title&lt;/title><br>&nbsp;&nbsp;&nbsp;&lt;/head><br>&nbsp;&nbsp;&nbsp;&lt;body><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;content of website...<br>&nbsp;&nbsp;&nbsp;&lt;/body><br>&lt;/html></code></pre>
                         </section>
                         <section class="chapter">
                             <h3 id="commonTags">Common Tags</h3>
@@ -445,7 +437,7 @@
                                             width="??"
                                         </td>
                                         <td>
-                                            Image width (in pixels(px) or %)
+                                            Image width (in pixels or %)
                                         </td>
                                     </tr>
                                     <tr>
@@ -453,7 +445,7 @@
                                             height="??"
                                         </td>
                                         <td>
-                                            Image height (in pixels(px) or %)
+                                            Image height (in pixels or %)
                                         </td>
                                     </tr>
                                     <tr>
@@ -461,7 +453,7 @@
                                             border="??"
                                         </td>
                                         <td>
-                                            Border thickness (in pixels(px)) <a href="#note">(*)</a>
+                                            Border thickness (in pixels) <a href="#note">(*)</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -469,7 +461,7 @@
                                             vspace="??"
                                         </td>
                                         <td>
-                                            Space above or below the image (in pixels(px)) <a href="#note">(*)</a>
+                                            Space above or below the image (in pixels) <a href="#note">(*)</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -477,7 +469,7 @@
                                             hspace="??"
                                         </td>
                                         <td>
-                                            Space on left or right of image (in pixels(px)) <a href="#note">(*)</a>
+                                            Space on left or right of image (in pixels) <a href="#note">(*)</a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -822,7 +814,121 @@
                                             &lt;frameset&gt; ... &lt;/frameset&gt;
                                         </td>
                                         <td>
-                                            Define the set of frames
+                                            Define the set of frames (no longer supported in HTML 5)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &lt;frameset&gt; Tag Attributes:
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            rows="??,??, ..."
+                                        </td>
+                                        <td>
+                                            Define row sizes & number of rows (size in pixels or %)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            cols="??,??, ..."
+                                        </td>
+                                        <td>
+                                            Define column sizes & number of columns (size in pixels or %)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            noresize="noresize"
+                                        </td>
+                                        <td>
+                                            User cannot resize any frames in frameset
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;iframe&gt; ... &lt;/iframe&gt;
+                                        </td>
+                                        <td>
+                                            Define a frame within the frameset
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &lt;iframe&gt; Tag Attributes:
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            src="url"
+                                        </td>
+                                        <td>
+                                            Location of HTML File for a frame
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            name="***"
+                                        </td>
+                                        <td>
+                                            Unique name of frame window
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            marginwidth="?"
+                                        </td>
+                                        <td>
+                                            Horizontal margin spacing inside frame (in pixels)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            marginheight="?"
+                                        </td>
+                                        <td>
+                                            Vertical margin spacing inside frame (in pixels)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            noresize="noresize"
+                                        </td>
+                                        <td>
+                                            Declare all frameset sizes as fixed
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            scrolling="***"
+                                        </td>
+                                        <td>
+                                            Determines scroll ability inside the frame: <code>yes, no, auto</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            frameborder="?"
+                                        </td>
+                                        <td>
+                                            Frame border: (<code>1</code>=yes, <code>2</code>=no)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            bordercolor="#??????"
+                                        </td>
+                                        <td>
+                                            Border <a href="color.html">color</a> <a href="#note">(*)</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;noframes&gt; ... &lt;/noframes&gt;
+                                        </td>
+                                        <td>
+                                            Unframed content (for browsers not supporting frames)
                                         </td>
                                     </tr>
                                 </tbody>
@@ -830,12 +936,395 @@
                         </section> 
                         <section class="chapter">
                             <h3 id="forms">Forms</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;form&gt; ... &lt;/form&gt;
+                                        </td>
+                                        <td>
+                                            Form input group declaration
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &lt;form&gt; Tag Attributes:
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            action="url"
+                                        </td>
+                                        <td>
+                                            URL of Form Script
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            method="***"
+                                        </td>
+                                        <td>
+                                            Method of Form: <code>get, post</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            enctype="***"
+                                        </td>
+                                        <td>
+                                            For file upload: <code>enctype="multipart/form-data"</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;input&gt; ... &lt;/input&gt;
+                                        </td>
+                                        <td>
+                                            Input field within form
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &lt;input&gt; Tag Attributes:
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            type="***"
+                                        </td>
+                                        <td>
+                                            Input field type: <code>text, password, checkbox, submit</code>, etc.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            name="***"
+                                        </td>
+                                        <td>
+                                            Form field name (for form processing script)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            value="***"
+                                        </td>
+                                        <td>
+                                            Value of input field
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            size="***"
+                                        </td>
+                                        <td>
+                                            Field size
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            maxlength="?"
+                                        </td>
+                                        <td>
+                                            Maximum Length of input field data
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            checked
+                                        </td>
+                                        <td>
+                                            Mark selected field in radio button group or checkbox
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;select&gt; ... &lt;/select&gt;
+                                        </td>
+                                        <td>
+                                            Select options from drop down list
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &lt;select&gt; Tag Attributes:
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            name="***"
+                                        </td>
+                                        <td>
+                                            Drop down combo-box name (for form processing script)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            size="?"
+                                        </td>
+                                        <td>
+                                            Number of selectable options
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            multiple
+                                        </td>
+                                        <td>
+                                            Allow multiple selections
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;option&gt; ... &lt;/option&gt;
+                                        </td>
+                                        <td>
+                                            Option (item) within drop down list
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &lt;option&gt; Tag Attributes:
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            value="***"
+                                        </td>
+                                        <td>
+                                            Option value
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            selected
+                                        </td>
+                                        <td>
+                                            Set option as default selected option
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;textarea&gt; ... &lt;/textarea&gt;
+                                        </td>
+                                        <td>
+                                            Large area for text input
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &lt;textarea&gt; Tag Attributes:
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            name="***"
+                                        </td>
+                                        <td>
+                                            Text area name (for form processing script)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            rows="?"
+                                        </td>
+                                        <td>
+                                            Number of rows of text shown
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            cols="?"
+                                        </td>
+                                        <td>
+                                            Number of columns (characters per row)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            wrap="***"
+                                        </td>
+                                        <td>
+                                            Word wrapping: <code>off, hard, soft</code>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </section> 
                         <section class="chapter">
                             <h3 id="specialChars">Special Characters</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="code">
+                                            &amp;lt;
+                                        </td>
+                                        <td>
+                                            &lt; - Less-than symbol
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &amp;gt;
+                                        </td>
+                                        <td>
+                                            &gt; - Greater-than symbol
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &amp;amp;
+                                        </td>
+                                        <td>
+                                            &amp; - Ampersand, or 'and' sign
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &amp;quot;
+                                        </td>
+                                        <td>
+                                            &quot; - Quotation mark
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &amp;copy;
+                                        </td>
+                                        <td>
+                                            &copy; - Copyright symbol
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &amp;trade;
+                                        </td>
+                                        <td>
+                                            &trade; - Trademark symbol
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &amp;nbsp;
+                                        </td>
+                                        <td>
+                                            &nbsp; - Space (non-breaking space)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &amp;#??;
+                                        </td>
+                                        <td>
+                                            ISO 8859-1 character - replace ?? with <a href="http://www.simplehtmlguide.com/isocodes.php">iso code</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </section> 
                         <section class="chapter">
-                            <h3 id="misc">Miscellaneous Tags></h3>
+                            <h3 id="misc">Miscellaneous Tags</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;!-- ... --&gt;
+                                        </td>
+                                        <td>
+                                            Comment within HTML source code
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;!DOCTYPE html ...>
+                                        </td>
+                                        <td>
+                                            Document type definition (<a href="https://en.wikipedia.org/wiki/Document_type_declaration">wiki</a>)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;meta> ... &lt;meta>
+                                        </td>
+                                        <td>
+                                            META information tag
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &lt;meta> Tag Attributes:
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            name="***"
+                                        </td>
+                                        <td>
+                                            Meta name: <code>description, keywords, author</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            http-equiv="***"
+                                        </td>
+                                        <td>
+                                            HTTP Equivalent Info: <code>title, etc.</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            content="***"
+                                        </td>
+                                        <td>
+                                            Information content
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;link>
+                                        </td>
+                                        <td>
+                                            LINK content relationship tag
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &lt;link> Tag Attributes:
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            rel="***"
+                                        </td>
+                                        <td>
+                                            Type of forward relationship
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            http="url"
+                                        </td>
+                                        <td>
+                                            Location (URL) of object or file being linked
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            type="***"
+                                        </td>
+                                        <td>
+                                            Type of object or file, eg: <code>text/css</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            title="***"
+                                        </td>
+                                        <td>
+                                            Link title (optional)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </section> 
                         <section class="important">
                             <h4 id="note">(*) Important Note:</h4>
