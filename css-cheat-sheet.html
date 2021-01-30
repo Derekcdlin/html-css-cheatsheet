@@ -60,7 +60,7 @@
                                 <tbody>
                                     <tr>
                                         <td class="code">
-                                            color: red;
+                                            color: <i>color</i>>;
                                         </td>
                                         <td>
                                             Element <a href="color.html">Color</a> - eg <code>red | #FF0000</code>
@@ -68,7 +68,7 @@
                                     </tr>
                                     <tr>
                                         <td class="code">
-                                            background-color: white;
+                                            background-color: <i>color</i>>;
                                         </td>
                                         <td>
                                             
@@ -84,7 +84,7 @@
                                     </tr>
                                     <tr>
                                         <td class="code">
-                                            border-color: yellow;
+                                            border-color: <i>color</i>>;
                                         </td>
                                         <td>
                                             Border <a href="color.html">color</a> of element
@@ -92,7 +92,7 @@
                                     </tr>
                                     <tr>
                                         <td class="code">
-                                            border: 1px solid blue;
+                                            border: 1px solid <i>color</i>>;
                                         </td>
                                         <td>
                                             Width, style and <a href="color.html">color</a> of border defined together
@@ -103,15 +103,220 @@
                         </section>
                         <section class="chapter">
                             <h3 id="textStyles">Text Styles</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="code">
+                                            text-align: left;
+                                        </td>
+                                        <td>
+                                            Horizontal alignment - <code>left | center | right</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            text-decoration: underline;
+                                        </td>
+                                        <td>
+                                            Text decorations - eg. <code>none | underline | line-through</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            font-family: <i>fontname</i>;
+                                        </td>
+                                        <td>
+                                            Font face (typeface) - eg. <code>Verdana, Arial, Helvticia</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            font-size: 16pt;
+                                        </td>
+                                        <td>
+                                            Font size or height - eg. <code>12pt | 15px</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            font-weight: bold;
+                                        </td>
+                                        <td>
+                                            Font weight (boldness) - eg. <code>bold | normal | 200</code>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </section>
                         <section class="chapter">
                             <h3 id="sizeLayout">Size & Layout</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="code">
+                                            width: 400px;
+                                        </td>
+                                        <td>
+                                            Width of HTML element - eg. <code>100px | 50%</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            height: 100%;
+                                        </td>
+                                        <td>
+                                            Height of HTML element - eg. <code>20px | 100%</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            margin: 5px;
+                                        </td>
+                                        <td>
+                                            Margin - space around an element, or distance between two elements
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            margin-top: 1px;
+                                        </td>
+                                        <td>
+                                            Top margin. Also try <code>-bottom: -left: or -right:</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            padding: 5px;
+                                        </td>
+                                        <td>
+                                            Padding - distance between an elements contents and its border
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            padding-top: 1px;
+                                        </td>
+                                        <td>
+                                            Top padding. Also try <code>-bottom: -left: or -right:</code>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </section>
                         <section class="chapter">
                             <h3 id="cssLists">CSS Lists</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="code">
+                                            list-style: <i>none</i>;
+                                        </td>
+                                        <td>
+                                            Clear existing bullet types set by html list tags
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </section>
                         <section class="chapter">
-                            <h3 id="namedColors">Named Colors</h3>
+                            <h3 id="namedColors">Basic Named Colors</h3>
+                            <p>
+                                Both HTML color codes (hexadecimal values) and their CSS color names are shown in the chart below.<br><a href="color.html">Full chart here</a>
+                            </p>
+                            <table id="colorCodeTable">
+                                <tbody>
+                                    <tr>
+                                        <th>CSS Color Name</th>
+                                        <th>HTML HEX Code</th>
+                                        <th>Sample Color Box</th>
+                                        <th>Sample Word</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Black</td>
+                                        <td>#000000</td>
+                                        <td style="background:#000000">&nbsp;</td>
+                                        <td style="font-weight:bold;color:#000000">Black</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blue</td>
+                                        <td>#0000FF</td>
+                                        <td style="background:#0000FF">&nbsp;</td>
+                                        <td style="font-weight:bold;color:#0000FF">Blue</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lime</td>
+                                        <td>#00FF00</td>
+                                        <td style="background: #00FF00">&nbsp;</td>
+                                        <td style="font-weight:bold;color:#00FF00">Lime</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Red</td>
+                                        <td>#FF0000</td>
+                                        <td style="background:#FF0000">&nbsp;</td>
+                                        <td style="font-weight:bold;color:#FF0000">Red</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cyan</td>
+                                        <td>#00FFFF</td>
+                                        <td style="background:#00FFFF">&nbsp;</td>
+                                        <td style="font-weight:bold;color:#00FFFF">Cyan</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Magenta</td>
+                                        <td>#FF00FF</td>
+                                        <td style="background:#FF00FF">&nbsp;</td>
+                                        <td style="font-weight:bold;color:#FF00FF">Magenta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Yellow</td>
+                                        <td>#FFFF00</td>
+                                        <td style="background:#FFFF00">&nbsp;</td>
+                                        <td style="font-weight:bold;color: #FFFF00">Yellow</td>
+                                    </tr>
+                                    <tr>
+                                        <td>White</td>
+                                        <td>#FFFFFF</td>
+                                        <td style="background:#FFFFFF">&nbsp;</td>
+                                        <td style="font-weight:bold;color: #FFFFFF">White</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gray</td>
+                                        <td>#808080</td>
+                                        <td style="background:#808080">&nbsp;</td>
+                                        <td style="font-weight:bold;color: #808080">Gray</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brown</td>
+                                        <td>#808080</td>
+                                        <td style="background:#A52A2A">&nbsp;</td>
+                                        <td style="font-weight:bold;color: #A52A2A">Brown</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Purple</td>
+                                        <td>#800080</td>
+                                        <td style="background:#800080">&nbsp;</td>
+                                        <td style="font-weight:bold;color: #800080">Purple</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Green</td>
+                                        <td>#008000</td>
+                                        <td style="background:#008000">&nbsp;</td>
+                                        <td style="font-weight:bold;color: #008000">Green</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Orange</td>
+                                        <td>#FFA500</td>
+                                        <td style="background: #FFA500">&nbsp;</td>
+                                        <td style="font-weight:bold;color: #FFA500">Orange</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Violet</td>
+                                        <td>#EE82EE</td>
+                                        <td style="background:#EE82EE">&nbsp;</td>
+                                        <td style="font-weight:bold;color: #EE82EE">Violet</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </section>
                     </div>
                 </div>
@@ -133,7 +338,7 @@
                             <a href="#cssLists">CSS Lists</a>
                         </li>
                         <li>
-                            <a href="#namedColors">Named Colors</a>
+                            <a href="#namedColors">Basic Named Colors</a>
                         </li>
                     </ul>
                 </div>
@@ -141,6 +346,9 @@
                     <ul>
                         <li>
                             <a href="html-cheat-sheet.html">HTML Cheat Sheet</a>
+                        </li>
+                        <li>
+                            <a href="color.html">Color Reference</a>
                         </li>
                     </ul>
                 </div>
@@ -150,7 +358,7 @@
                     <span style="float: left;">
                         <a href="https://www.codecademy.com">www.codecademy.com</a>  
                     </span>
-                    "Cheat Sheet for HTML & CSS - "
+                    "Cheat Sheet for HTML & CSS " -
                     <a href="about-me.html">Derek Lin</a>
                 </p>
             </div>
