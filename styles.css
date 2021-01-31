@@ -243,6 +243,7 @@ td {
 }
 .cheatsheet #colorCodeTable {
     width: auto;
+    font-size: 100%;
 }
 .important {
     text-align: justify;
@@ -278,4 +279,8 @@ th {
     margin: 0px 2px;
     padding: 1px 8px;
     border-bottom: 1px solid #ccc;
+}
+.mainColor {
+    background:rgb(217, 227, 240);
+    font-weight: bold;
 }
