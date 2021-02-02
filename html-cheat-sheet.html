@@ -416,7 +416,7 @@
                             </table>
                         </section>
                         <section class="chapter">
-                            <h3 id="images">Images</h3>
+                            <h3 id="media">Media</h3>
                             <table>
                                 <tbody>
                                     <tr>
@@ -494,6 +494,75 @@
                                         </td>
                                         <td>
                                             Space on left or right of image (in pixels) <a href="#note">(*)</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;video> ... &lt;/video>
+                                        </td>
+                                        <td>
+                                            Basic video - text within tags will be displayed if source is not included
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            &lt;source src="<i>url</i>" type="video/<i>type</i>"&gt;
+                                        </td>
+                                        <td>
+                                            Source of video - <code>url</code> contains video path, type contains video type
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &lt;video&gt; Tag Attributes:
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            autoplay
+                                        </td>
+                                        <td>
+                                            Automatically plays video, requires <code>muted</code> tag to work on some browsers
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            controls
+                                        </td>
+                                        <td>
+                                            Offer controls to allow the user to control video playback
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            loop
+                                        </td>
+                                        <td>
+                                            Loops video upon reaching the end
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            muted
+                                        </td>
+                                        <td>
+                                            The audio will be initially silenced
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            height="?"
+                                        </td>
+                                        <td>
+                                            Video height (in pixels)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            width="?"
+                                        </td>
+                                        <td>
+                                            Video width (in pixels)
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1376,7 +1445,7 @@
                             <a href="#sectionDivs">Section Divisions</a>
                         </li>
                         <li>
-                            <a href="#images">Images</a>
+                            <a href="#media">Media</a>
                         </li>
                         <li>
                             <a href="#linkingTags">Linking Tags</a>
