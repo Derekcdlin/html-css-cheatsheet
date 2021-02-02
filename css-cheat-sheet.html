@@ -63,7 +63,7 @@
                                             color: <i>color</i>>;
                                         </td>
                                         <td>
-                                            Element <a href="color.html">Color</a> - eg <code>red | #FF0000</code>
+                                            Element <a href="color.html">Color</a> - eg. <code>red | #FF0000 | rgb(255,0,0) | hsl(0,0,0)</code>
                                         </td>
                                     </tr>
                                     <tr>
@@ -229,7 +229,10 @@
                         <section class="chapter">
                             <h3 id="namedColors">Basic Named Colors</h3>
                             <p>
-                                Both HTML color codes (hexadecimal values) and their CSS color names are shown in the chart below.<br><a href="color.html">Full chart here</a>
+                                Both HTML color codes (hexadecimal values) and their CSS color names are shown in the chart below.
+                            </p>
+                            <p>
+                                <a href="color.html">Full chart here</a>
                             </p>
                             <table id="colorCodeTable">
                                 <tbody>
@@ -332,6 +335,61 @@
                                 </tbody>
                             </table>
                         </section>
+                        <section class="chapter">
+                            <h3 id="moreColors">More Color Options</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="code">
+                                            color: #000000;
+                                        </td>
+                                        <td>
+                                            Hexadecimal colors, specify values of red, blue, and green
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            color: rgba(x, y, z, a);
+                                        </td>
+                                        <td>
+                                            uses RGB color syntax, a for alpha(opacity)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            
+                                        </td>
+                                        <td>
+                                            RGB values range from 0 to 255; Alpha is represented as a percentage
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            color: hsla(x, y, z, a);
+                                        </td>
+                                        <td>
+                                            HSLA stands for Hue, Saturation, and Lightness, and Alpha(Opacity)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            
+                                        </td>
+                                        <td>
+                                            H ranges from 0 to 360; S, L, and A are all represented as percentages
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            color: transparent;
+                                        </td>
+                                        <td>
+                                            Makes element transparent;
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -353,6 +411,9 @@
                         </li>
                         <li>
                             <a href="#namedColors">Basic Named Colors</a>
+                        </li>
+                        <li>
+                            <a href="#moreColors">More Color Options</a>
                         </li>
                     </ul>
                 </div>
