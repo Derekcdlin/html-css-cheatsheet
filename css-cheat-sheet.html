@@ -30,6 +30,7 @@
             </nav>
             <div id="main-body">
                 <div id="content">
+                    <div class="spacer"></div>
                     <section class="maintitle">
                         <h1>CSS Cheet Sheet</h1>
                     </section>
@@ -96,6 +97,14 @@
                                         </td>
                                         <td>
                                             Width, style and <a href="color.html">color</a> of border defined together
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            border-radius: 5px | 50%;
+                                        </td>
+                                        <td>
+                                            Curves the corners of the border (in pixels or %)
                                         </td>
                                     </tr>
                                 </tbody>
@@ -169,6 +178,22 @@
                                             Modifies the height of text line, unitless number is ratio of font size;
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td class="code">
+                                            word-spacing: 1.2em;
+                                        </td>
+                                        <td>
+                                            Modifies the distance between words
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            letter-spacing: 1.2em;
+                                        </td>
+                                        <td>
+                                            Modifies the distance between letters
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </section>
@@ -222,6 +247,102 @@
                                         </td>
                                         <td>
                                             Top padding. Also try <code>-bottom: -left: or -right:</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            position: <i>position</i>;
+                                        </td>
+                                        <td>
+                                            Specifies the position of an element: <code>relative, absolute, fixed</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            static
+                                        </td>
+                                        <td>
+                                            Default position of elements
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            relative
+                                        </td>
+                                        <td>
+                                            Sets element's position to relative to its default position on the page
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            absolute
+                                        </td>
+                                        <td>
+                                            Sets element's position to relative to its closest positioned parent element
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            fixed
+                                        </td>
+                                        <td>
+                                            Pins element's position, will not move with the rest of the document
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            z-index: 2;
+                                        </td>
+                                        <td>
+                                            Specifies how far back or how forward an element appears on the page
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            display: <i>display</i>;
+                                        </td>
+                                        <td>
+                                            Allows you to control how an element flows vertically or horizontally
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            inline
+                                        </td>
+                                        <td>
+                                            Elements take up as little space as possible, <code>width | height</code> cannot be adjusted
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            block
+                                        </td>
+                                        <td>
+                                            Elements take up the width of their container, <code>height</code> can be adjusted
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="codeint">
+                                            inline-block
+                                        </td>
+                                        <td>
+                                            Elements appear next to each other, <code>width & height</code> can be adjusted
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            float: left;
+                                        </td>
+                                        <td>
+                                            Moves element as far left or as far right as possible on web page, <code>left | right</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            clear: left;
+                                        </td>
+                                        <td>
+                                            Prevents floating elements on left or right side of element, <code>left | right | both</code>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -407,15 +528,20 @@
                             </table>
                         </section>
                         <section class="important">
-                            <h4 id="note1" style="color:black;">(*) Serif vs Sans Serif</h4>
+                            <h4 id="note1" style="color:black;">(*) Note on Fonts</h4>
                             <p>
+                                Find new fonts at <a href="https://fonts.google.com/">Google Fonts</a>. 
+                                Insert the <code>&lt;link></code> attribute found on the site after locating desired font in the <code>&lt;head></code> section.
+                            </p>
+                            <h5>Serif vs Sans-serif</h5>
+                            <p style="padding: 0px;">
                                 Serif - fonts that have extra details on the ends of each letter. Examples include
                                 fonts like 
                                 <code style="font-family: 'Times New Roman', Times, serif;">Times New Roman</code> or 
                                 <code style="font-family: Georgia, 'Times New Roman', Times, serif"> Georgia</code>, among others.
                             </p>
                             <p>
-                                Sans-Serif - fonts that do not have extra details on the ends of each letter. Instead,
+                                Sans-serif - fonts that do not have extra details on the ends of each letter. Instead,
                                 letters have straight flat edges like 
                                 <code style="font-family: Arial, sans-serif">Arial</code> or 
                                 <code style="font-family: Helvetica, sans-serif">Helvetica</code>
@@ -425,6 +551,7 @@
                 </div>
             </div>
             <div id="sidebar">
+                <div class="side-spacer"></div>
                 <div class="sidebar-item">
                     <h3>Cheat Sheet Menu</h3>
                     <ul>

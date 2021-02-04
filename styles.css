@@ -5,7 +5,6 @@
     margin-bottom: 0px;
     margin-left: auto;
     padding: 0;
-    position: relative;
     text-align: left;
     width: 970px;
 }
@@ -13,17 +12,23 @@ body {
     font-family: Lucida Grande,Verdana,Lucida Sans,Lucida Sans Unicode,Trebuchet MS,Helvetica,sans-serif;
     font-size: 10pt;
     line-height: 1.4em;
+    margin: 0px 8px;
     background: #444 url("./images/bg_body.png")
 }
 header {
     background-color: navy;
     color: white;
-    margin: 5px;
+    margin: 0px;
     padding: 1em;
     border: 0px;
     font-size: 190%;
     font-weight: bolder;
     text-shadow: 3px 3px #222;
+    position: fixed;
+    width: 970px;
+    border: 3px solid DimGray;
+    box-sizing: border-box;
+    z-index: 10;
 }
 #nav a{
     color: #ccc;
@@ -52,6 +57,10 @@ header {
     border-top: 1px solid #999;
     border-bottom: 1px solid #666;
     font-size: 90%;
+    position: fixed;
+    top: 125px;
+    width: 970px;
+    z-index: 10;
 }
 ul{
     display: block;
@@ -71,11 +80,15 @@ h1 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4{
     color: steelblue;
     padding: 0;
     margin: 0;
     text-align: left;
+}
+h5 {
+    line-height: 0.0;
+    font-size: 90%;
 }
 a {
     color: royalblue;
@@ -107,6 +120,8 @@ a:visited{
     float: left;
     margin: 0;
     padding: 0;
+    position: relative;
+    
 }
 #content {
     background: #eee;
@@ -115,21 +130,35 @@ a:visited{
     border-right: 1px solid #aaa;
     min-height: 560px;
 }
+
+.spacer {
+    height: 145px;
+    width: 100px;
+    background-color: #eee;
+}
+.side-spacer {
+    height: 145px;
+    width: 100px;
+    background-color: #DEDEDE;
+}
+
 #sidebar {
     margin: 0;
     padding: 20px;
     width: 140px;
-    float: right;
     line-height: 1.5em;
     background: #DEDEDE;
     font-size: 90%;
     color:#737173;
+    float: right;
+    z-index: 11;
 }
 #sidebar ul li {
     padding: 0 0 0px 15px;
     line-height: 1.5em;
     text-align: left;
     background: url(./images/bullet.gif) no-repeat 0 4px;
+    
 }
 li {
     display: list-item;
