@@ -4,6 +4,8 @@
         <title>Home | Derek's HCCS</title>
         <link href="./styles.css" type="text/css" rel="stylesheet">
         <script src='./js-cheat-sheet.js' type='text/javascript' defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src='./offset-anchor.js' type='text/javascript' defer></script>
     </head>
     <body>
         <div id="wrap">
@@ -34,7 +36,6 @@
             </nav>
             <div id="main-body">
                 <div id="content">
-                    <div class="spacer"></div>
                     <section class="maintitle">
                         <h1>JS Cheat Sheet</h1>
                     </section>
@@ -188,71 +189,65 @@
                                 </tbody>
                             </table>
                         </section>
-                        <section class="chapter">
+                        <section>
                             <h3 id="examples">DOM Examples</h3>
                             <section class="chapter">
                                 <p id="innerHTML"><b>.innerHTML</b></p>
-                                <pre class="code"><code>document.body.innerHTML  = 'This is the text of the body element';</code></pre>
-                                <p id="innerParagraph">This changes the innerHTML of the document's body</p>
+                                <pre class="code"><code id="innerParagraph">document.body.innerHTML  = 'This is the text of the body element';</code></pre>
+                                <p>This changes the innerHTML of the document's body.</p>
                                 <button id="innerHButton">Change innerHTML</button><button id="innerUButton">Change back</button>
                             </section>
                             <section class="chapter">
                                 <p id="querySelector"><b>.querySelector</b></p>
                                 <pre class="code"><code>document.querySelector('p').innerHTML = 'This is the first paragraph';</code></pre>
-                                <p>This will select the first <code>&lt;p> </code>element in the document and changes the innerHTML</p>
+                                <p>This will select the first <code>&lt;p> </code>element in the document and changes the innerHTML.</p>
                                 <pre class="code"><code>let element = document.querySelector('header');<br><br>element.querySelector('h1').innerHTML = 'This is the &lt;h1> inside the &lt;header>';</code></pre>
-                                <p>This will select the first <code>h1</code> element in the first <code>&lt;header></code> element and changes the innerHTML</p>
+                                <p>This will select the first <code>h1</code> element in the first <code>&lt;header></code> element and changes the innerHTML.</p>
                             </section>
                             <section class="chapter">
                                 <p id="getElement"><b>.getElementById</b></p>
                                 <pre class="code"><code>document.getElementById('bio').innerHTML = 'This is the element with id 'bio'";</code></pre>
-                                <p>This will select the element with id of 'bio' and changes the innerHTML</p>
+                                <p>This will select the element with id of 'bio' and changes the innerHTML.</p>
                             </section>
                             <section class="chapter">
                                 <p id="style"><b>.style</b></p>
-                                <pre class="code"><code>let button = document.getElementById('redButton');<br><br>button.style.backgroundColor = 'red';<br>button.style['font-size'] = '32px';</code></pre>
-                                <p>Makes the element with id 'redButton' red and with fontsize 32px</p>
+                                <pre class="code" id="styleCode"><code >let button = document.getElementById('redButton');<br><br>button.style.backgroundColor = 'red';<br>button.style['font-size'] = '32px';</code></pre>
+                                <p>Makes the element with id 'redButton' red and with fontsize 32px.</p>
+                                <button id="styleHButton">Change the style!</button><button id="styleUButton">Change it back!</button>
                             </section>
                             <section class="chapter">
                                 <p id="createElement"><b>.createElement</b></p>
                                 <pre class="code"><code>let paragraph = document.createElement('p');<br><br>paragraph.id = 'info';<br>paragraph.class = 'pText';<br>paragraph.innerHTML = 'The text inside the paragraph';<br><br>document.body.appendChild(paragraph);</code></pre>
-                                <p>Creates <code>&lt;p></code> element with id 'info', class 'pText', and innerHTML. Adds to the end of the <code>&lt;body></code></p>
-                            </section>
-                            <section class="chapter">
+                                <p>Creates <code>&lt;p></code> element with id 'info', class 'pText', and innerHTML. Adds to the end of the <code>&lt;body></code>.</p>
                                 <p id="appendChild"><b>.appendChild</b></p>
                                 <pre class="code"><code>let newDestination = document.createElement('li');<br>newDestination.innerHTML = 'Oaxaca, Mexico';<br><br>document.getElementById('destinations').appendChild(newDestination);</code></pre>
                                 <p>Creates new <code>&lt;li></code> element and adds to the element with id 'destinations'.</p>
-                            </section>
-                            <section class="chapter">
                                 <p id="removeChild"><b>.removeChild</b></p>
-                                <pre class="code"><code>let paragraph = document.body.querySelector('p');<br>document.body.removeChild(paragraph);</code></pre>
-                                <p>Selects the first <code>&lt;p></code> in <code>&lt;body></code> and deletes it</p>
+                                <pre class="code" id="preAdd"><code>let paragraph = document.body.querySelector('p');<br>document.body.removeChild(paragraph);</code></pre>
+                                <p>Selects the first <code>&lt;p></code> in <code>&lt;body></code> and deletes it.</p>
+                                <button id="removeButton">Remove paragraph</button><button id="appendButton">Create and Append</button>
                             </section>
                             <section class="chapter">
                                 <p><b>.hidden</b></p>
                                 <pre class="code"><code id="hidden">document.getElementById('sign').hidden = true;</code></pre>
-                                <p>Hides element with id 'sign'</p>
+                                <p>Hides element with id 'sign'.</p>
                                 <button id="hide">Hide</button><button id="unhide">Unhide</button>
                             </section>
                             <section class="chapter">
                                 <p id="onclick"><b>.onclick</b></p>
-                                <pre class="code"><code></code></pre>
-                                <p></p>
+                                <pre class="code"><code>let element = document.getElementById('interact');<br><br>element.onclick = function(){<br>&nbsp;&nbsp;&nbsp;element.style.backgroundColor = 'blue';<br>}</code></pre>
+                                <p>The element with id 'interact' will change to <code>blue</code> background color.</p>
                             </section>
                             <section class="chapter">
                                 <p id="parentNode"><b>.parentNode</b></p>
-                                <pre class="code"><code></code></pre>
-                                <p></p>
-                            </section>
-                            <section class="chapter">
+                                <pre class="code"><code>let child = document.getElementById('child');<br>child.parentNode.innerHTML = "I have killed my children!"</code></pre>
+                                <p>Gets element id 'child' and changes its parent's innerHTML to text, effectively erasing all of the children.</p>
                                 <p id="firstChild"><b>.firstChild</b></p>
-                                <pre class="code"><code></code></pre>
-                                <p></p>
-                            </section>
-                            <section class="chapter">
+                                <pre class="code"><code>let first = document.body.firstChild;<br>first.innerHTML = 'I am the child!';</code></pre>
+                                <p>Changes the first child's innerHTML</p>
                                 <p id="children"><b>.children</b></p>
-                                <pre class="code"><code></code></pre>
-                                <p></p>
+                                <pre class="code"><code>let destinationList = document.getElementById('destinations').children;<br>console.log(destinationList[i].innerHTML);</code></pre>
+                                <p>Gets list of children for element id 'destinations', prints out first child's innerHTML</p>
                             </section>
                         </section>
                     </div>

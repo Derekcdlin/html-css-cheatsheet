@@ -62,6 +62,7 @@ header {
     width: 970px;
     z-index: 10;
 }
+
 ul{
     display: block;
     margin-block-start: 1em;
@@ -95,6 +96,7 @@ a {
     cursor: pointer;
     text-decoration: underline;
 }
+
 a:active {
     color: slategray;
 }
@@ -120,6 +122,7 @@ a:visited{
     float: left;
     margin: 0;
     padding: 0;
+    padding-top: 158px;
     position: relative;
     
 }
@@ -337,4 +340,9 @@ th {
 .mainColor {
     background:rgb(217, 227, 240);
     font-weight: bold;
+}
+
+button {
+    color:#ccc;
+    background-color: #222;
 }
