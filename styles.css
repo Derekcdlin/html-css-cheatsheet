@@ -220,12 +220,18 @@ p{
 .cheatsheet pre.code code {
     text-align: left;
 }
+
 code {
     color: mediumvioletred;
     text-align: left;
     font-weight: 400;
     font-family: monospace;
 }
+
+.example {
+    color: blueviolet;
+}
+
 div, section {
     display: block;
 }
@@ -255,6 +261,25 @@ tbody {
     text-align: left;
     font-size: 90%;
 }
+
+.cheatsheet td.code a {
+    color: mediumvioletred;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+.cheatsheet td.code a:visited{
+    color: mediumvioletred;
+    outline:none;
+}
+
+.cheatsheet td.code a:hover {
+    color: hotpink;
+    text-decoration-line: underline;
+}
+
+
 .cheatsheet td {
     margin: 0px;
     padding: 0px;

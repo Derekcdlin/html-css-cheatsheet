@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home | Derek's HCCS</title>
+        <link href="./styles.css" type="text/css" rel="stylesheet">
+        <script src='./js-cheat-sheet.js' type='text/javascript' defer></script>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <p>Derek's HTML and CSS Cheat Sheet</p>
+            </header>
+            <nav>
+                <ul id="nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="html-cheat-sheet.html">HTML Cheat Sheet</a>
+                    </li>
+                    <li>
+                        <a href="css-cheat-sheet.html">CSS Cheat Sheet</a>
+                    </li>
+                    <li>
+                        <a href="js-cheat-sheet.html">JS Cheat Sheet</a>
+                    </li>
+                    <li>
+                        <a href="color.html">Color Reference</a>
+                    </li>
+                    <li>
+                        <a href="about-me.html">About Me</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="main-body">
+                <div id="content">
+                    <div class="spacer"></div>
+                    <section class="maintitle">
+                        <h1>JS Cheat Sheet</h1>
+                    </section>
+                    <section class="chapter">
+                        <p>
+                            A quick reference list to JavaScript functions, allowing for interaction with
+                            HTML and CS files.
+                        </p>
+                    </section>
+                    <div class="cheatsheet">
+                        <section class="chapter">
+                            <h3 id="use">Using Scripts</h3>
+                            <p><b>An external JS file</b></p>
+                            <pre class="code"><code>&lt;script src="*.js">&lt;/script></code></pre>
+                            <p><b>Inline in the HTML</b></p>
+                            <pre class="code"><code>&lt;script><br>&nbsp;&nbsp;&nbsp;<i>Javascript code<br>&lt;/script></i></code></pre>
+                        </section>
+                        <section class="chapter">
+                            <h3 id="dom">DOM Interaction</h3>
+                            <p>Click code snippets to see examples</p>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="code">
+                                            document
+                                        </td>
+                                        <td>
+                                            Keyword granting access to the root of the DOM in JS
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            <a href="#innerHTML">
+                                                <i class="example">element</i>.innerHTML
+                                            </a>
+                                        </td>
+                                        <td>
+                                            Modifies the contents of an element
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            <a href="#querySelector">
+                                                <i class="example">element</i>.querySelector(<i class="example">&lt;selector></i>)
+                                            </a>
+                                        </td>
+                                        <td>
+                                            Select the first element with CSS selectors, eg. <code>h1, p, div</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            <a href="#getElement">
+                                                <i class="example">element</i>.getElementById(<i>#id</i>)
+                                            </a>
+                                        </td>
+                                        <td>
+                                            Keyword granting access to the root of the DOM in JS
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            <a href="#style">
+                                                <i class="example">element</i>.style['<i class="example">CSS property</i>'] = '...'
+                                            </a>
+                                        </td>
+                                        <td>
+                                            Provides access to the inline style of HTML tag
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            <a href="#createElement">
+                                                <i class="example">parent</i>.createElement('<i class="example">&lt;selector></i>')
+                                            </a>
+                                        </td>
+                                        <td>
+                                            Creates new element based on given selector, adds under parent element
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            <a href="#appendChild">
+                                                <i class="example">parent</i>.appendChild(<i class="example">element</i>)
+                                            </a>
+                                        </td>
+                                        <td>
+                                            Adds element as child to parent element
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            <a href="#removeChild">
+                                                <i class="example">parent</i>.removeChild(<i class="example">element</i>)
+                                            </a>
+                                        </td>
+                                        <td>
+                                            Removes targeted element from parent element
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            <a href="#hidden">
+                                                <i class="example">element</i>.hidden
+                                            </a>
+                                        </td>
+                                        <td>
+                                            Set to boolean value, follows selected element, hides element
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            <a href="#onclick">
+                                                <i class="example">element</i>.onclick = <i class="example">function</i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            Assigns a function to run on a click event of element
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            <a href="#parentNode">
+                                                <i class="example">element</i>.parentNode
+                                            </a>
+                                        </td>
+                                        <td>
+                                            Returns the parent node of the selected element
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            <a href="#firstChild">
+                                                <i class="example">element</i>.firstChild
+                                            </a>
+                                        </td>
+                                        <td>
+                                            Returns first child of the selected element
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="code">
+                                            <a href="#children">
+                                                <i class="example">element</i>.children
+                                            </a>
+                                        </td>
+                                        <td>
+                                            REturns a list of the element's children, <code>null</code> if no children
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                        <section class="chapter">
+                            <h3 id="examples">DOM Examples</h3>
+                            <section class="chapter">
+                                <p id="innerHTML"><b>.innerHTML</b></p>
+                                <pre class="code"><code>document.body.innerHTML  = 'This is the text of the body element';</code></pre>
+                                <p id="innerParagraph">This changes the innerHTML of the document's body</p>
+                                <button id="innerHButton">Change innerHTML</button><button id="innerUButton">Change back</button>
+                            </section>
+                            <section class="chapter">
+                                <p id="querySelector"><b>.querySelector</b></p>
+                                <pre class="code"><code>document.querySelector('p').innerHTML = 'This is the first paragraph';</code></pre>
+                                <p>This will select the first <code>&lt;p> </code>element in the document and changes the innerHTML</p>
+                                <pre class="code"><code>let element = document.querySelector('header');<br><br>element.querySelector('h1').innerHTML = 'This is the &lt;h1> inside the &lt;header>';</code></pre>
+                                <p>This will select the first <code>h1</code> element in the first <code>&lt;header></code> element and changes the innerHTML</p>
+                            </section>
+                            <section class="chapter">
+                                <p id="getElement"><b>.getElementById</b></p>
+                                <pre class="code"><code>document.getElementById('bio').innerHTML = 'This is the element with id 'bio'";</code></pre>
+                                <p>This will select the element with id of 'bio' and changes the innerHTML</p>
+                            </section>
+                            <section class="chapter">
+                                <p id="style"><b>.style</b></p>
+                                <pre class="code"><code>let button = document.getElementById('redButton');<br><br>button.style.backgroundColor = 'red';<br>button.style['font-size'] = '32px';</code></pre>
+                                <p>Makes the element with id 'redButton' red and with fontsize 32px</p>
+                            </section>
+                            <section class="chapter">
+                                <p id="createElement"><b>.createElement</b></p>
+                                <pre class="code"><code>let paragraph = document.createElement('p');<br><br>paragraph.id = 'info';<br>paragraph.class = 'pText';<br>paragraph.innerHTML = 'The text inside the paragraph';<br><br>document.body.appendChild(paragraph);</code></pre>
+                                <p>Creates <code>&lt;p></code> element with id 'info', class 'pText', and innerHTML. Adds to the end of the <code>&lt;body></code></p>
+                            </section>
+                            <section class="chapter">
+                                <p id="appendChild"><b>.appendChild</b></p>
+                                <pre class="code"><code>let newDestination = document.createElement('li');<br>newDestination.innerHTML = 'Oaxaca, Mexico';<br><br>document.getElementById('destinations').appendChild(newDestination);</code></pre>
+                                <p>Creates new <code>&lt;li></code> element and adds to the element with id 'destinations'.</p>
+                            </section>
+                            <section class="chapter">
+                                <p id="removeChild"><b>.removeChild</b></p>
+                                <pre class="code"><code>let paragraph = document.body.querySelector('p');<br>document.body.removeChild(paragraph);</code></pre>
+                                <p>Selects the first <code>&lt;p></code> in <code>&lt;body></code> and deletes it</p>
+                            </section>
+                            <section class="chapter">
+                                <p><b>.hidden</b></p>
+                                <pre class="code"><code id="hidden">document.getElementById('sign').hidden = true;</code></pre>
+                                <p>Hides element with id 'sign'</p>
+                                <button id="hide">Hide</button><button id="unhide">Unhide</button>
+                            </section>
+                            <section class="chapter">
+                                <p id="onclick"><b>.onclick</b></p>
+                                <pre class="code"><code></code></pre>
+                                <p></p>
+                            </section>
+                            <section class="chapter">
+                                <p id="parentNode"><b>.parentNode</b></p>
+                                <pre class="code"><code></code></pre>
+                                <p></p>
+                            </section>
+                            <section class="chapter">
+                                <p id="firstChild"><b>.firstChild</b></p>
+                                <pre class="code"><code></code></pre>
+                                <p></p>
+                            </section>
+                            <section class="chapter">
+                                <p id="children"><b>.children</b></p>
+                                <pre class="code"><code></code></pre>
+                                <p></p>
+                            </section>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+                <div class="side-spacer"></div>
+                <div class="sidebar-item">
+                    <h3>Cheat Sheet Menu</h3>
+                    <ul>
+                        <li>
+                            <a href="#dom">DOM Interaction</a>
+                        </li>
+                        <li>
+                            <a href="#examples">DOM Examples</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="html-cheat-sheet.html">HTML Cheat Sheet</a>
+                        </li>
+                        <li>
+                            <a href="css-cheat-sheet.html">CSS Cheat Sheet</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="footer">
+                <p>
+                    <span style="float: left;">
+                        <a href="https://www.codecademy.com">www.codecademy.com</a>   
+                    </span>
+                    "Cheat Sheet for HTML & CSS " -
+                    <a href="about-me.html">Derek Lin</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
